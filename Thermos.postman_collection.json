@@ -25,6 +25,85 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"The Dark Knight\",\n    \"casts\": [\"Christian Bale\", \"Heath Ledger\", \"Aaron Eckhart\", \"Michael Caine\"],\n    \"genres\": [\"Action\", \"Crime\", \"Drama\"]\n}"
+				},
+				"url": {
+					"raw": "{{ROUTE}}/movies",
+					"host": [
+						"{{ROUTE}}"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"The Dark Knight Rises\",\n    \"casts\": [\"Christian Bale\", \"Heath Ledger\", \"Aaron Eckhart\", \"Michael Caine\"],\n    \"genres\": [\"Action\", \"Crime\", \"Drama\"]\n}"
+				},
+				"url": {
+					"raw": "{{ROUTE}}/movies/2",
+					"host": [
+						"{{ROUTE}}"
+					],
+					"path": [
+						"movies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{ROUTE}}/movies/2",
+					"host": [
+						"{{ROUTE}}"
+					],
+					"path": [
+						"movies",
+						"2"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
