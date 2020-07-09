@@ -104,6 +104,64 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"hi@mail.com\",\n    \"password\": \"letmein\"\n}"
+				},
+				"url": {
+					"raw": "{{ROUTE}}/auth/signup",
+					"host": [
+						"{{ROUTE}}"
+					],
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"hi@mail.com\",\n    \"password\": \"letmein\"\n}"
+				},
+				"url": {
+					"raw": "{{ROUTE}}/auth/login",
+					"host": [
+						"{{ROUTE}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
